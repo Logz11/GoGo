@@ -1,0 +1,488 @@
+/* --------------------------------------------- */
+/*COLOR PALETTE*/
+/* BASE (CREAM) - #FDF5E1*/
+/* LOGO (BANANA YELLOW) - #FDBF1F*/
+/* ACCENTS (CORNFLOWER) - #66A5D9*/
+/* SECONDARY FONT (LIGHT CHARCOAL) - #707070*/
+
+/* FONTS*/
+/*LOGO - font-family: 'custard cream'*/
+/*COPY - font-family: 'circular standard'*/
+
+/* --------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------- */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,
+body {
+background-color: #FDF5E1;
+color: #707070;
+font-family: 'circular-standard';
+font-weight: 300;
+font-size: 20px;
+text-rendering: optimizeLegibility;
+overflow-x: hidden;
+}
+
+a {
+text-decoration: none;
+}
+
+button,
+input {
+    border-style: none;
+}
+
+@font-face {
+    font-family: 'circular-standard';
+    src: url('../fonts/CircularStd-Book.otf') format("opentype");
+}
+
+li {
+    list-style: none;
+}
+
+/* --------------------------------------------- */
+/* HEADINGS */
+/* --------------------------------------------- */
+
+h2 {
+    color: #66A5D9;
+    text-align: center;
+    margin: 5% 0;
+    font-size: 250%;
+    text-align: justify;
+}
+
+h3 {
+    color: white;
+    font-size: 300%;
+}
+
+
+
+#selectionContainer h2:nth-child(2n){
+    color: #66A5D9;
+    transform:translate(0, -90%);
+    margin-bottom: 0;
+}
+
+
+h1 {
+    color: #FDBF1F;
+}
+
+
+
+/* --------------------------------------------- */
+/* SELECTOR */
+/* --------------------------------------------- */
+
+.selector-body {
+    overflow: visible;
+    position: relative;
+    display: block;
+}
+
+.selector-main {
+    padding-bottom: 10%;
+}
+
+.selector-body header {
+    width: 95%;
+    margin: 5% auto;
+}
+
+#check-in {
+    width: 49.5%;
+    font-size: 20px;
+}
+
+div#check-in {
+    border-style: none;
+    background-color: white;
+    box-shadow:  3px 3px 7px #afafaf;
+    border-radius: 5px;
+}
+
+div#check-in p{
+    display: inline-block;
+    margin: 1% 0 0 1%;
+}
+
+#selectionContainer {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.hero-image-container#hero-image-alt {
+    height: auto;
+    width: 20%;
+    float: left;
+    margin-left: 7%;
+    margin-bottom: 3%;
+}
+
+.alt-header-text {
+    clear: both;
+}
+
+.stop-countdown {
+    display:flex;
+    align-items: baseline;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.stop-countdown p:nth-child(2n){
+    font-size: 200%;
+}
+
+p#short-copy {
+    text-align: center;
+    font-size: 30px;
+}
+
+.stop-countdown-container {
+    height: 300px;
+    width: auto;
+    background-color: #FDBF1F;
+    border-radius: 10px;
+    box-shadow:  3px 3px 7px #afafaf;
+    transform: translate(0, -35.5%);
+    text-align: center;
+}
+
+.stop-countdown-container p {
+    color: white;
+    align-content: space-around;
+}
+
+#current-stops-remaining,
+#total-stops {
+    font-size: 700%;
+}
+
+.bus-stop-list,
+.destination-list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bus-stops-container {
+    width:auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow:  3px 3px 7px #afafaf;
+    max-height: 842.5px;
+    overflow-y: auto;
+}
+
+.bus-stop-list,
+.destination-list {
+    counter-reset: li;
+    list-style: none;
+    list-style: decimal;
+    padding: 0;
+}
+
+button.radio-btn-full {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #66A5D9;
+    background-color: transparent;
+    border-radius: 200px;
+    left: 80%;
+    transition: background 0.3s;
+}
+
+.radio-btn-full.toggled {
+    background-color: #66A5D9;
+}
+
+.radio-btn-full:focus {
+    outline: none;
+}
+
+.bus-stops-container li {
+    border-bottom: 2px solid #66A5D9;
+}
+
+.bus-stops-container li {
+    position: relative;
+    padding: 2% 0;
+    margin: 5px 0;
+    color: #444;
+    text-decoration: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+/*
+.bus-stops-container ol li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -.3959em;
+    left: -.5em;
+    background-color: #FDBF1F;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .35em solid rgb(218, 218, 218);;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    color: #fff;
+}
+
+.bus-stops-container ul li:after{
+    content: '>';
+    position: absolute;
+    top: -.3959em;
+    left: 24.5em;
+    background-color: #FDBF1F;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .35em solid rgb(218, 218, 218);;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    color: #fff;
+}*/
+
+#submit.btn-full {
+    margin: 0;
+    background-color: #66A5D9;
+    padding: 10px 15px;
+    height: 30px;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+button#login-btn.btn-full {
+    width: 125px;
+    font-size: 30px;
+    border-radius: 10px;
+    height: 40px;
+    box-shadow:  1px 1px 3px #afafaf;
+    cursor: pointer;
+}
+
+#submit:hover,
+#submit:active {
+    background-color:#008cff;
+}
+
+.invisible.invisible {
+	display: none;
+}
+
+
+/* --------------------------------------------- */
+/* MAP */
+/* --------------------------------------------- */
+
+.map-container {
+    display:flex;
+    flex-direction: row;
+}
+
+#map{
+    height:100vh;
+    width:auto;
+}
+
+
+/* --------------------------------------------- */
+/* LOGIN PAGE */
+/* --------------------------------------------- */
+
+.body-login {
+    height: 100vh;
+}
+
+.login-label {
+    color: #66A5D9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.hero-image-container {
+    width: 35%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.section-form {
+    height: 50%;
+}
+
+.contact-form {
+    text-align: center;
+    height: 100%;
+    margin-top: 5%;
+}
+
+form ion-icon {
+    color: white;
+    font-size: 200%;
+    vertical-align: middle;
+    transition: color 0.3s;
+}
+
+form input,
+div#check-in,
+button:not(.radio-btn-full) {
+    border-radius: 10px;
+    height: 30px;
+    box-shadow:  1px 1px 3px #afafaf;
+}
+
+form input {
+    width: 70%;
+    font-size: 20px;
+}
+
+form input:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #bdbdbd;
+}
+
+label {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.btn-full {
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #FDBF1F;
+    transition: background 0.3s;
+    margin-top: 10%;
+    color: #FDF5E1;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #c49318;
+    color: white;
+}
+
+.btn-full span {
+    vertical-align: middle;
+    text-align: center;
+}
+
+input {
+    text-indent: 5px;
+}
+
+/* --------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------- */
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    overflow: hidden;
+    height: 5%;
+}
+
+.footer-nav{
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.footer-nav a{
+    flex-basis: 5%;
+}
+
+.footer-nav span {
+    flex-basis: 95%;
+}
+
+.footer-nav a:link,
+.footer-nav a:visited {
+    color:#66A5D9;
+}
+
+.footer-nav ion-icon{
+    font-size: 300%;
+    height: 100%;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active {
+    color:#008cff;
+}
+
+
+
+/* --------------------------------------------- */
+/* ANIMATIONS & EFFECTS */
+/* --------------------------------------------- */
+
+/* --------------------------------------------- */
+/* THE GRAVEYARD */
+/* --------------------------------------------- */
+/*
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #FDBF1F;
+    background-color: white;
+}
+
+.btn-ghost {
+    background-color: #FDBF1F;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    transition: color 0.3s, background 0.3s;
+}
+
+.alt-header-text label {
+    color: #66A5D9;
+}
+
+#bus-stops-destinations{
+    transform: translate(0, -45%);
+}
+
+
+*/

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gogo! | Student Check-In</title>
+    <link rel="icon" href="Resources/images/go_icon.png">
+    <link rel="stylesheet" href="Resources/css/styles.css">
+    <link rel="stylesheet" href="Resources/css/grid.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="selector-body">
+    <main class="selector-main">
+        <header>
+            <div class="hero-image-container" id="hero-image-alt">
+                <img src="Resources/images/logo.png" alt="gogo logo">
+            </div>
+            <div class="alt-header-text">
+                <div class="row">
+                    <div id="check-in">
+                        <p>WBSD Bus 33</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="selectionContainer">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <h2>Students on the Bus:</h2>
+                    <div class="bus-stops-container">
+                        <ol class="bus-stop-list" id="all-stops">
+                        </ol>
+                    </div>
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="stop-countdown-container">
+                        <h3>Check-In</h3>
+                        <div class="stop-countdown">
+                            <p id="current-stops-remaining">0</p>
+                            <p>&nbsp;out&nbsp;of&nbsp;</p>
+                            <p id="total-stops">16</p>
+                        </div>
+                        <p id="short-copy">students scanned in</p>
+                    </div>
+                    <h2>Your Stops:</h2>
+                    <div class="bus-stops-container" id="bus-stops-destinations">
+                        <ul class="destination-list" id="destinations"></ul>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col span-2-of-3">
+                <span>&nbsp;</span>
+            </div>
+            <div class="col span-1-of-3">
+                <a href="map.html" id="submit" class="btn-full">Route&nbsp;></a>
+            </div>
+        </div>
+        </section>
+
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="index.html" title="currently returns you to login">
+                <ion-icon id="settings" name="cog-outline"></ion-icon>
+            </a>
+            <span>&nbsp;</span>
+            <a href="map.html" title="currently takes you to map">
+                <ion-icon id="help" name="help-circle-outline"></ion-icon>
+        </nav>
+    </footer>
+    <script src="Resources/js/scripts.js"></script>
+</body>
+</html>
